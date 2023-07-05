@@ -1,0 +1,173 @@
+:root {
+    --clr-cyan: hsl(180, 29%, 50%);
+
+    --clr-gray-1: hsl(180, 52%, 96%);
+    --clr-gray-2: hsl(180, 31%, 95%);
+    --clr-gray-3: hsl(180, 8%, 52%);
+    --clr-gray-4: hsl(180, 14%, 20%);
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.app-container {
+    background-color: var(--clr-gray-1);
+}
+.container {
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+.header-image {
+    background-color: var(--clr-cyan);
+    position: relative;
+}
+.header-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Card Start */
+.card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 5px 10px 20px hsl(180, 29%, 50%, 0.15);
+    border-radius: 8px;
+    background-color: #fff;
+}
+.filter {
+    position: absolute;
+    width: 1000px;
+    max-width: 90%;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hide-filters {
+    display: none;
+}
+.filter-tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.show-filter-tags {
+    display: flex;
+}
+.filter-tag {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    border-radius: 5px;
+}
+.filter-text {
+    text-transform: uppercase;
+    padding: 0.5rem 0.4rem 0.4rem;
+    color: var(--clr-cyan);
+    background-color: hsl(180, 29%, 50%, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+}
+.filter-icon {
+    background-color: var(--clr-cyan);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.clear-filters {
+    color: var(--clr-gray-3);
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.card-image {
+    border-radius: 50%;
+    width: 75px;
+}
+.card-body {
+}
+.card-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--clr-cyan);
+    margin-bottom: 8px;
+}
+.card-heading p {
+    font-weight: 700;
+    margin-right: 0.25rem;
+}
+.tag {
+    padding: 0.25rem 0.5rem;
+    padding-top: 0.5rem;
+    line-height: 0.8;
+    border-radius: 10px;
+    font-size: 0.75rem;
+}
+.tag-new {
+    background-color: var(--clr-cyan);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.tag-featured {
+    background-color: var(--clr-gray-3);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.card-title {
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+}
+.card-footer {
+    display: flex;
+    gap: 1rem;
+    color: var(--clr-gray-2);
+}
+.tag-transparent {
+    color: var(--clr-gray-3);
+    font-size: 0.9rem;
+}
+
+.card-tags {
+    margin-left: auto;
+    display: flex;
+    gap: 0.75rem;
+}
+.card-tags p {
+    font-weight: 700;
+}
+.card-tag {
+    padding: 0.25rem;
+
+    background-color: hsl(180, 29%, 50%, 0.2);
+    color: var(--clr-cyan);
+    border-radius: 6px;
+    cursor: pointer;
+}
+/* Card End */
+.mobile {
+    display: none;
+}
