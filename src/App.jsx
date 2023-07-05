@@ -61,10 +61,11 @@ const App = () => {
         filterHandler();
     }, [activeFilters]);
     return (
-        <div className="app-container">
+        <div className={`app-container ${openFilters && "filters-open"}`}>
             <div className="header-image">
                 <img src="images/bg-header-desktop.svg" alt="header bg" className="desktop" />
                 <img src="images/bg-header-mobile.svg" alt="header bg" className="mobile" />
+
                 <div className={`card filter ${!openFilters && "hide-filters"}`}>
                     {/* Filter tags */}
                     <div className="filter-tags">

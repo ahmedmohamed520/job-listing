@@ -46,8 +46,11 @@ a {
     padding: 1.5rem 2rem;
     margin-bottom: 1rem;
     box-shadow: 5px 10px 20px hsl(180, 29%, 50%, 0.15);
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: #fff;
+}
+.featured {
+    border-left: 5px solid var(--clr-cyan);
 }
 .filter {
     position: absolute;
@@ -170,4 +173,57 @@ a {
 /* Card End */
 .mobile {
     display: none;
+}
+
+@media only screen and (max-width: 704px) {
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 0;
+        margin-bottom: 48.5px;
+    }
+    .filter {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 1.5rem;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        width: auto;
+        max-width: 100%;
+        margin: 0;
+        transform: none;
+    }
+    .card-image {
+        margin-top: -32.5px;
+    }
+    .card-heading p {
+        margin-right: 1rem;
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        border-bottom: 1px solid var(--clr-gray-3);
+        padding-bottom: 1rem;
+    }
+    .card-tags {
+        margin-left: 0;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .card-tag {
+        padding: 0.5rem;
+    }
+    .filters-open {
+        margin-bottom: 6rem;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
 }
